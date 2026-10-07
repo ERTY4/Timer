@@ -90,7 +90,7 @@ class TestTimerLogic(unittest.TestCase):
         self.assertFalse(self.app.is_running)
         self.assertEqual(self.app.time_output.get(), "00:00:00")
         self.assertEqual(self.app.work_rest_change.get(), "Work")
-        self.assertEqual(self.app.current_timer.cget("foreground"), "#bb0000")
+        self.assertEqual(str(self.app.current_timer.cget("foreground")), "#bb0000")
 
 
 if __name__ == "__main__":
